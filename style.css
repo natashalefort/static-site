@@ -1,0 +1,428 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after {
+
+    box-sizing: inherit;
+}
+
+
+.smallbox {
+    cursor: pointer;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #fafafa;
+    color: #b2b2b2;
+    font-family: "Oxygen", sans-serif;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    font-weight: 300;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 6rem;
+}
+
+main {
+    margin-left: 120px;
+}
+
+
+a {
+    text-decoration: none;
+
+}
+
+img {
+
+    width: 100%;
+}
+
+aside {
+
+    position: fixed;
+    background: #2a2a2a;
+    top: 0px;
+    left: 0px;
+    width: 120px;
+    height: 100%;
+    z-index: 1;
+    text-align: center;
+    padding: 0;
+}
+
+
+/* Logo size and grayscale */
+
+aside img {
+    filter: grayscale(100%) contrast(50%) brightness(100%);
+
+    margin-bottom: -3px;
+}
+
+/* Icon sizes */
+
+.material-icons.md-36 {
+    font-size: 36px;
+    color: white;
+
+}
+
+/* aside nav */
+
+aside a {
+    display: block;
+    padding: 15px 0;
+    color: white;
+    transition: all 0.35s;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    letter-spacing: 2px;
+
+
+}
+
+aside p {
+    margin: 0;
+    padding: 0;
+    color: #b2b2b2;
+}
+
+aside a:hover {
+    background: #f96161;
+}
+
+nav a.active {
+    background-color: #f96161;
+}
+
+
+
+aside p,
+.material-icons.md-36:hover {
+
+    color: white;
+}
+
+
+
+
+header {
+    text-align: center;
+    letter-spacing: 2px;
+
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 4em;
+    letter-spacing: 4px;
+    color: #f96161;
+    line-height: 1em;
+}
+
+h2 {
+    color: #f96161;
+}
+
+
+header h5 {
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 4px;
+    color: #b2b2b2;
+    text-align: center;
+}
+
+.about,
+.portfolio {
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-left: 130px;
+
+}
+
+.about h2,
+.portfolio h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: line-through;
+    padding-bottom: 10px;
+    margin: 100px 0 0 0;
+    letter-spacing: 4px;
+    padding-left: 15px;
+    
+}
+
+
+.about p {
+    color: #b2b2b2;
+
+}
+
+.about span {
+    font-weight: 600;
+    color: #f96161;
+
+}
+
+.about h3 {
+    font-weight: 300;
+    margin: 50px 0;
+
+
+}
+
+.html {
+    width: 90%;
+
+}
+
+.portfolio h3 {
+    color: #f96161;
+    font-weight: 300;
+    letter-spacing: 2px;
+
+}
+
+.portfolio p {
+    font-size: 0.875em;
+
+}
+
+.row-halves {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    -webkit-flex-pack: justify;
+
+}
+
+.row-halves .col {
+    width: 49%;
+
+}
+
+.col {
+    border: 1px solid #222;
+    background: #d3d3d3;
+    padding: 10px;
+    border: none;
+
+}
+
+/* Portfolio rows and columns */
+
+.row {
+    margin: 8px -16px;
+    margin-left: 120px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+       
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        
+    }
+}
+
+h4 {
+    color: #f96161;
+    font-family: "Oxygen", sans-serif;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    font-weight: 300;
+
+}
+
+.weirdbg {
+    background: url(img/bg_nonretard.png) no-repeat center;
+    background-size: 80%;
+}
+
+
+/*/////// Portfolio rows and columns ///////*/
+
+
+.footer {
+    border-top: 1px solid #222;
+}
+
+.top-bar {
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+.top-bar a {
+    margin: 10px;
+    font-size: 2em;
+    color: #b2b2b2;
+    transition: all 0.35s;
+    display: inline-block;
+
+}
+
+
+.top-bar a:hover {
+    transform: scale(1.1);
+    color: #009688;
+
+
+}
+
+.bottom-bar {
+    background: #000;
+    font-size: 0.75em;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}
+
+@media(max-width: 768px) {
+
+    .row-halves {
+        display: block;
+
+    }
+
+    .row-halves .col {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    .weirdbg {
+        background-size: cover;
+    }
+}
+
+
+@media(max-width: 601px) {
+
+    aside {
+        display: none;
+
+    }
+
+    main {
+        width: 100%;
+        margin: 0 auto;
+        padding: 12px 25px;
+    }
+
+
+
+    header h1 {
+        font-size: 3em;
+/*        line-height: 1.4em;*/
+        margin: auto;
+    }
+
+
+    header h5 {
+        font-size: 1em;
+        letter-spacing: 2px;
+
+    }
+
+    .mobile-nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 1;
+    }
+
+    .mobile-nav a {
+        width: 100%;
+        color: #b2b2b2;
+        text-transform: uppercase;
+        font-size: 0.875em;
+        letter-spacing: 2px;
+        text-align: center;
+        padding: 10px 10px;
+        transition: all 0.35s;
+
+    }
+
+    .mobile-nav a:hover {
+        background: #f96161;
+        color: #2a2a2a;
+    }
+    
+    .mobile-nav a.active{
+        color: #2a2a2a;
+    }
+
+    .portfolio {
+        margin-left: 0px;
+    }
+
+    .about {
+        margin-left: 0px;
+    }
+    
+    .portfolio h2 {
+    margin: 15px 0 0 0;
+    text-align: center;
+    padding-left: 0px;
+    }
+
+    .row {
+        margin: auto;
+    }
+}
+
+
+@media(min-width:600px) {
+    .mobile-nav {
+        display: none;
+    }
+}
+
+    
